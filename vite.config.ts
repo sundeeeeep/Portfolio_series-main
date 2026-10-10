@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', 'VITE_');
 
   return {
-    base: env.VITE_BASE_PATH || '/',
+    base: '/Portfolio_series-main/',
     plugins: [react(), tailwindcss()],
     build: {
       target: 'es2020',
